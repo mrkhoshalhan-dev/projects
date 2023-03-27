@@ -1,0 +1,12 @@
+body{
+    background-color:pink;
+}
+
+.parent div{
+    display: flex;
+    height:10vh;
+    width:10vw;
+    background-color: red;
+    border:5px solid blue;
+    margin-bottom:1vh;
+}
