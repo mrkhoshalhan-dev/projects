@@ -2,11 +2,18 @@ body{
     background-color:pink;
 }
 
-.parent div{
+.parent{ 
     display: flex;
+    flex-direction:column-reverse ;
+}
+
+.child{
     height:10vh;
     width:10vw;
     background-color: red;
     border:5px solid blue;
     margin-bottom:1vh;
+    margin-right:2vw;
+    font-size: 8vh;
+    font-weight: bold;
 }
