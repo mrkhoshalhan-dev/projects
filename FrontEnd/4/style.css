@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+    width: 99%;
+    min-height:100vh;
+}
+body *{
+    border:1px solid black;
+    margin:5px;
+    height:100%;
+    width: 100%;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr 4fr 2fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "section section aside"
+    "article article aside"
+    "footer footer footer";
+    justify-items: center;
+    align-items: center;
+}
+
+header{
+    grid-area:header;
+    background-color: aqua;
+}
+nav{
+    grid-area:nav;
+    background-color: aquamarine;
+}
+section{
+    grid-area:section;
+    background-color: azure;
+}
+aside{
+    grid-area:aside;
+    background-color: coral;
+}
+article{
+    grid-area:article;
+    background-color:gold;
+}
+footer{
+    grid-area:footer;
+    background-color: darkgoldenrod;
+}
