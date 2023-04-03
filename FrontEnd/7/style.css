@@ -4,4 +4,5 @@ body>h1{
 
 li[data-tag*="italian"]:not([data-tag*="american"]){
     background-color: yellow;
+    
 }
