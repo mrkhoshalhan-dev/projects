@@ -1,11 +1,7 @@
-let arr = [];
-arr.push("Joseph");
-arr.push("joskeph");
-function addE(ELEMENT){
-    arr.push(ELEMENT)
-}
-addE("the name");
-addE("addy")
+let arr =[0];
 
-console.log("Length of the array:", arr.length)
-console.log("arr:", arr)
+for(let i=1;i<=10; i+=2){
+console.log(i);
+arr.push(i);
+}
+console.log(arr)
