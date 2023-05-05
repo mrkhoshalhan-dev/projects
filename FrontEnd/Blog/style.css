@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --lb:#9bb9bf;
+    --dg:#025959;
+    --dy:#f29441;
+    --dr:#8c0303;
+
+    --js:'Josefin Sans', sans-serif;
+    --yo:"Yeseva One", cursive;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: Yeseva One;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+    /* height: 200%; */
+    max-width: 100%;
+    background-image: url(assets/bg.jpg);
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header{
+    padding: 0 4vw;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+    position: sticky;
+    top:0;
+    width: 50vw;
+    
+    background: rgba(255, 255, 255, 0.31);
+    border-radius: 1vh;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+
+}
+
+
+header h4{
+    display: inline;
+
+}
+header a{
+    color: black;
+    
+    /* flex-basis: 100px; */
+}
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items:last center;
+    height: 93vh;
+}
+
+#header-h1{
+    font-size: 10vw;
+    color: rgba(255, 255, 255, 0.97);
+    filter: blur(0px);
+
+    
+}
+
+#logo{
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    display: grid;
+}
+
+footer{
+    /* width: 80%; */
+    display: flex;
+    column-gap: 3vw;
+}
+footer ul{
+    flex-basis: 33%;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#blog-section{
+    grid-area: bs;
+}
