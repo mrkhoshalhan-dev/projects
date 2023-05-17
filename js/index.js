@@ -1,18 +1,13 @@
-const getData = () =>{
-    return fetch("data.json")
+const fn = ()=> {
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            document.querySelector("html").style.background= 'red';
+        resolve("the promise was resoled")
+        },2000)
+        
+    })
 }
 
-getData().then(res=>{
-    console.log("pass 1")
-}).then(res2=>{
-    console.log("pass 2")
-}).then(res3=>{
-    console.log('pass 3')
-    throw new Error("this is just an error message")
-}).then(res4=>{
-    console.log("this should not be seen")
-}).catch(err=>{
-    console.log(err)
-}).then(res5=>{
-    console.log("pass 5")
+fn().then(res=>{
+    console.log(res)
 })
